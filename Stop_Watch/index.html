@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+
+    <style>
+        body {
+            background-color: rgb(255, 208, 0);
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+        p {
+            font-size : 1.5rem;
+        }
+
+        #button_box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .btn {
+            padding: 20px 50px;
+            border-radius: 5px;
+            border: solid white 1px;
+            background-color: transparent;
+            font-size: 1.2rem;
+        }
+
+        .btn:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">STOPWATCH</h1>
+    <h1>VANILLA JAVASCRIPT STOPWATCH</h1>
+    <div>
+        <p><span id="min">00</span>:<span id="sec">00</span></p>
+    </div>
+</div>
+<div id="button_box">
+    <button class="btn" id="start">Start</button>
+    <button class="btn" id="stop">Stop</button>
+    <button class="btn" id="reset">Reset</button>
+</div>
+
+<script src="stop_watch.js"></script>   
+<!-- script를 맨 마지막에 안 넣고 위에 넣었다가 js 실행 잘 안된다고 고생함;;
+맨 밑에 넣어야 올바르게 브라우저가 해석할 수 있다. -->
+</body>
+
+</html>
